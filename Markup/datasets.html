@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML - Machine Learner</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom-theme.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script> 
+</head>
+
+<body>
+
+<div class="container col-lg-12 col-md-12 col-sm-12">
+
+<!-- header -->
+<header>
+<div class="row wr-global-header">
+	<div class="col-sm-8 app-logo"><img src="images/logo.png" /><h2 class="app-title">Machine Learner</h2>
+	</div>
+	<div class="col-sm-4">
+		<div class="wr-auth pull-right">
+			<a href="#" data-toggle="dropdown" class="cu-ico-right-button cu-ico-button-user">Administrator</a>
+			<div class="dropdown-menu">
+				<div class="cu-arrow"></div>
+				<div class="dropdown-menu-content">
+					<a class="filter-item">Logout</a>
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+</header>
+<!-- /header -->
+
+<!-- secondary header - app bar -->
+<div id="nav" class="row wr-app-bar">
+	<div class="col-md-9 wr-action-container">
+
+		<div class="wr-asset-type-switcher">
+			<a href="#" class="ctrl-asset-type-switcher" data-placement="bottom" data-trigger="focus">
+			<!--a href="#" class="ctrl-asset-type-switcher" data-placement="bottom" data-trigger="focus"-->
+			<span class="btn-asset"></span>
+			</a>
+		</div>
+
+		<div class="wr-project">
+			<span class="title">DATASETS \ </span>
+		</div>
+
+		<div class="wr-action-btn-bar">
+			<!--
+			<a href="#" class="cu-btn btn-add-new" role="button">Create Project</a>
+			<a href="#" class="cu-btn btn-save" role="button">Save and Create</a>
+			-->
+		</div>
+	</div>
+
+	<div class="col-md-3 wr-wiz-nav">
+		<div class="wr-secondary-links pull-right">
+			<!-- empty -->
+			<div class="ctrl-wiz-nav">
+			<a href="#" class="cu-btn btn-prev">Previous</a>
+			<a href="#" class="cu-btn-reverse btn-next">Next</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- secondary header - app bar -->
+
+
+<!-- content/body -->
+<div class="row">
+	<div class="col-lg-12 wr-secondary-bar">
+		
+		<!-- Wizard -->
+	    <ul class="nav nav-pills nav-wizard">
+	        <li class="active"><a href="#" data-toggle="tab"><span class="nav-wedge-step">Step 1</span>Analysis</a><div class="nav-arrow"></div></li>
+	        <li><div class="nav-wedge"></div><a href="#" data-toggle="tab"><span class="nav-wedge-step">Step 2</span>Explore</a><div class="nav-arrow"></div></li>
+	        <li><div class="nav-wedge"></div><a href="#" data-toggle="tab"><span class="nav-wedge-step">Step 2</span>Pre-Process</a><div class="nav-arrow"></div></li>
+	        <li><div class="nav-wedge"></div><a href="#" data-toggle="tab"><span class="nav-wedge-step">Step 3</span>Algorithm</a><div class="nav-arrow"></div></li>
+	        <li><div class="nav-wedge"></div><a href="#" data-toggle="tab"><span class="nav-wedge-step">Step 4</span>XXXX</a><div class="nav-arrow"></div></li>
+	        <li><div class="nav-wedge"></div><a href="#" data-toggle="tab"><span class="nav-wedge-step">Step 4</span>Build</a><div class="nav-arrow"></div></li>
+	    </ul>
+
+		
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		
+
+		<!-- content -->
+		<div class="container col-md-12 col-centered wr-content">
+
+
+			<div class="ctrl-info-panel col-md-12 col-centered">
+				<h2>You dont have any Datasets created at the moment.</h2>
+				<p><a href="create-dataset.html" class="cu-level2-btn btn-add-new-dark" data-toggle="tooltip" data-original-title="Create Dataset"><span>Create Dataset</span></a></p>
+			</div>
+
+
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingOne">
+			      <h4 class="panel-title">
+			      	<table class="tbl-projects">
+				      	<tr>
+				      		<td>
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="ctrl-exp-col">
+						          	<span class="cu-acc-head-title">MyDataSet#1</span>
+						          	<span class="cu-acc-head-created">[ created: 14-05-2014 ]</span>
+						          	<span class="cu-acc-head-workflow"><strong>2</strong> Version(s) Available</span>
+						        </a>	
+						    </td>
+						    <td class="c-right">			        
+						        <div>
+						        	<a href="#" class="cu-reg-btn btn-edit" data-toggle="tooltip" data-original-title="Edit this Dataset"><span>Edit</span></a>
+								    <!--a href="#" class="cu-reg-btn btn-add-new" data-toggle="tooltip" data-original-title="Add workflow to this project"><span>Add workflow</span></a-->
+									<a href="#" class="cu-reg-btn btn-delete" data-toggle="tooltip" data-original-title="Delete this Dataset"><span>Delete Dataset</span></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+			      <div class="panel-body">
+			        <table>
+					  <tr>
+					  	<td class="c-padd project-description" valign="top">Dataset Description goes here. This can be a lengthier description and is a test.</td>
+					  	<td>				  		
+
+					  		<!-- analysis creation -->
+					  		<div class="wr-analysis">
+								<label class="input-label">Create new Version<span class="help-tip glyphicon glyphicon-question-sign"></span></label>
+								<div class="input-control text">
+									<table>
+										<tr>
+											<td class="f-input-w-md">
+								    			<input type="text" value="" class="f-input-w-md" placeholder="eg: v1.0.1"/>
+								    		</td>
+								    		<td>
+								    			<a href="#" class="cu-level2-btn btn-add-new-dark" data-toggle="tooltip" data-original-title="Create Analysis"><span>Create</span></a>
+								    		</td>
+								    	</tr>
+								    </table>
+								</div>
+							</div>
+							<!-- /analysis creation -->
+
+					  		<table class="tbl-project-desc">
+					 			<tr>
+					 				<td class="c-padd"><a href="#" class="t-proj-workflow"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;1.0.0</a></td>
+					 				<td>
+					 					<a href="#" class="cu-level2-btn btn-view-dark" data-toggle="tooltip" data-original-title="View this Version"><span>View</span></a>
+										<a href="#" class="cu-level2-btn btn-delete-dark" data-toggle="tooltip" data-original-title="Delete this Dataset"><span>Delete</span></a>
+					 				</td>
+					 			</tr>
+					 			<tr>
+					 				<td class="c-padd"><a href="#" class="t-proj-workflow"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;1.8.0</a></td>
+					 				<td>
+					 					<a href="#" class="cu-level2-btn btn-view-dark" data-toggle="tooltip" data-original-title="View this Version"><span>View</span></a>
+										<a href="#" class="cu-level2-btn btn-delete-dark" data-toggle="tooltip" data-original-title="Delete this Version"><span>Delete</span></a>
+					 				</td>
+					 			</tr>					 			
+					 		</table>
+					  	</td>
+					  </tr>
+					</table>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingTwo">
+			      <h4 class="panel-title">
+					<table>
+				      	<tr>
+				      		<td>
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="ctrl-exp-col">
+						          	<span class="cu-acc-head-title">DataSet#2</span>
+						          	<span class="cu-acc-head-created">[ created: 14-05-2014 ]</span>
+						          	<span class="cu-acc-head-workflow"><strong>1</strong> Version(s) Available</span>
+						        </a>	
+						    </td>
+						    <td class="c-right">			        
+						        <div>
+						        	<a href="#" class="cu-reg-btn btn-edit" data-toggle="tooltip" data-original-title="Edit this Dataset"><span>Edit</span></a>
+									<a href="#" class="cu-reg-btn btn-delete" data-toggle="tooltip" data-original-title="Delete this project"><span>Delete Dataset</span></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			    <div class="panel-body">
+			        <table>
+					  <tr>
+					  	<td class="c-padd project-description" valign="top">Dataset Description</td>
+					  	<td>
+
+					  		<!-- version creation -->
+					  		<div class="wr-analysis">
+								<label class="input-label">Versions<span class="help-tip glyphicon glyphicon-question-sign"></span></label>
+								<a href="create-version.html" class="cu-level2-btn btn-add-new-dark" data-toggle="tooltip" data-original-title="Create Version"><span>Create Version</span></a>
+							</div>
+							<!-- /version creation -->
+
+					  		<table class="tbl-project-desc">
+					 			<tr>
+					 				<td class="c-padd"><a href="#" class="t-proj-workflow"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;1.0.0.0</a></td>
+					 				<td>
+					 					<a href="#" class="cu-level2-btn btn-view-dark" data-toggle="tooltip" data-original-title="View this Version"><span>View</span></a>
+										<a href="#" class="cu-level2-btn btn-delete-dark" data-toggle="tooltip" data-original-title="Delete this Version"><span>Delete</span></a>
+					 				</td>
+					 			</tr>
+					 			<tr>
+					 				<td class="c-padd"><a href="#" class="t-proj-workflow"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;1.0.0.2</a></td>
+					 				<td>
+					 					<a href="#" class="cu-level2-btn btn-view-dark" data-toggle="tooltip" data-original-title="View this Version"><span>View</span></a>
+										<a href="#" class="cu-level2-btn btn-delete-dark" data-toggle="tooltip" data-original-title="Delete this Version"><span>Delete</span></a>
+					 				</td>
+					 			</tr>	
+					 			<tr>
+					 				<td class="c-padd"><a href="#" class="t-proj-workflow"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;1.0.0.2</a></td>
+					 				<td>
+					 					<a href="#" class="cu-level2-btn btn-view-dark" data-toggle="tooltip" data-original-title="View this Version"><span>View</span></a>
+										<a href="#" class="cu-level2-btn btn-delete-dark" data-toggle="tooltip" data-original-title="Delete this Version"><span>Delete</span></a>
+					 				</td>
+					 			</tr>
+					 			<tr>
+					 				<td class="c-padd"><a href="#" class="t-proj-workflow"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;1.0.0.2</a></td>
+					 				<td>
+					 					<a href="#" class="cu-level2-btn btn-view-dark" data-toggle="tooltip" data-original-title="View this Version"><span>View</span></a>
+										<a href="#" class="cu-level2-btn btn-delete-dark" data-toggle="tooltip" data-original-title="Delete this Version"><span>Delete</span></a>
+					 				</td>
+					 			</tr>					 							 			
+					 		</table>
+					  	</td>
+					  </tr>
+					</table>
+				</div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading" role="tab" id="headingThree">
+			      <h4 class="panel-title">
+					<table>
+				      	<tr>
+				      		<td>
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="ctrl-exp-col">
+						          	<span class="cu-acc-head-title">TestDataSet#3</span>
+						          	<span class="cu-acc-head-created">[ created: 14-05-2014 ]</span>
+						          	<span class="cu-acc-head-workflow"><img src="images/icons/ico-alert.png" class="ico-align" />No Versions(s) Available</span>
+						        </a>	
+						    </td>
+						    <td class="c-right">			        
+						        <div>
+						        	<a href="#" class="cu-reg-btn btn-edit" data-toggle="tooltip" data-original-title="Edit this Dataset"><span>Edit</span></a>
+									<a href="#" class="cu-reg-btn btn-delete" data-toggle="tooltip" data-original-title="Delete this project"><span>Delete Dataset</span></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			      <div class="panel-body">
+
+			        <table>
+					  <tr>
+					  	<td class="c-padd project-description" valign="top">Project Description</td>
+					  	<td>
+
+					  		<!-- version creation -->
+					  		<div class="wr-analysis">
+					  			<!--p>No Workflows Available. Click 'Add Workflow' button to create one.</p-->
+								<label class="input-label">Versions<span class="help-tip glyphicon glyphicon-question-sign"></span></label>
+								<a href="create-version.html" class="cu-level2-btn btn-add-new-dark" data-toggle="tooltip" data-original-title="Create Version"><span>Create Version</span></a>
+							</div>
+							<!-- /version creation -->
+					  		
+					  		
+					  	</td>
+					  </tr>
+					</table>
+	
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+		<!-- /content -->
+
+
+	</div>
+</div>
+<!-- /content/body -->
+
+</div>
+    
+
+
+
+
+<!--footer class="footer">
+        <p>&copy; 2014 WSO2 Inc. All Rights Reserved</p>
+</footer-->
+
+
+
+<div id="content-asset-types" style="display: none">
+    <div>
+    	<a class="ast-type-item" href="projects.html"><img src="images/icons/ico-projects.png" /><span>Projects</span></a>
+    	<a class="ast-type-item" href="datasets.html"><img src="images/icons/ico-datasets.png" /><span>Datasets</span></a>   
+    </div>
+</div>  
+
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+
+    $("[data-toggle=popover]").popover();
+
+    $(".ctrl-asset-type-switcher").popover({
+        html : true, 
+        content: function() {
+          return $('#content-asset-types').html();
+        }
+    });	
+
+	$('#nav').affix({
+	      offset: {
+	        top: $('header').height()
+	      }
+	});	 
+}); 
+
+</script>
+
+</body>
+</html>
