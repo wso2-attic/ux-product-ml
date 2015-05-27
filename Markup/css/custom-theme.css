@@ -453,5 +453,9 @@ a.ctrl-filter-category:hover {
 	margin-right:7px
 }
 
+.alert .close {
+	right:0;
+}
+
 
 
