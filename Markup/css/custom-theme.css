@@ -427,6 +427,7 @@ a.ctrl-filter-category:hover {
 	border-right:0px solid transparent;
 	font-weight: 100;
 	font-size: 14px;
+	padding:10px;
 }
 
 .alert-info {
