@@ -508,6 +508,10 @@ a.t-proj-workflow {
 	font-size:14px;
 }
 
+.t-proj-workflow  {
+	color:#666;
+}
+
 /* tables */
 .tbl-project-desc td {
 	padding:0px 0px;
