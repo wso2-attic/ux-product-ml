@@ -1154,5 +1154,18 @@ a.btn-opr-cancel {
 	height:700px;
 }
 
+.wr-desc-chart {
+	border-top:1px solid #f0f0f0;
+	padding-top:10px;
+	font-size:12px;
+	color:#777;
+	font-weight:100;
+	width:90%;
+}
+
+.wr-desc-chart h5 {
+	color:#555;
+	font-weight:100;
+}
 
 
