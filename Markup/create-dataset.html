@@ -113,6 +113,25 @@
 					  <option>BAM</option>
 					</select>				
 				</div>	
+				
+				<label class="input-label">Data Table<span class="help-tip glyphicon glyphicon-question-sign"></span></label>
+				<div class="input-control lookup">
+				    <div><span>MyDataTable </span><a class="cu-level2-btn btn-add-new-dark" href="javascript:operationSelect('createproject')">Select Table</a></div>
+				</div>					
+				
+				
+				
+				
+                <!-- alert -->
+                <div class="popup-content" data-operation="createproject">
+                    <div class="content">Select a Data Table</div>
+                    <div class="buttons">
+                        <a href="javascript:runOperation('lock')" class="btn-opr-default">Yes</a>
+                        <a href="javascript:hidePopup()" class="btn-opr-cancel">No</a>
+                    </div>
+                </div>
+                <!-- /alert -->				
+				
 
 				<label class="input-label">Destination<span class="help-tip glyphicon glyphicon-question-sign"></span></label>
 				<div class="input-control text">
@@ -158,6 +177,12 @@
 </div>
     
 
+	<!-- modal popup template -->
+<div class="wr-modalpopup">
+    <div class="modalpopup-content"><!-- dynamic content --></div>
+    <div class="modalpopup-bg"></div>
+</div>
+<!-- /modal popup template -->
 
 
 
@@ -169,6 +194,7 @@
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/operationsmenu.js"></script>
 
 
 

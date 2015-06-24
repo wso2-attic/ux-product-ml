@@ -681,6 +681,13 @@ a.t-proj-workflow {
 	-webkit-appearance: none;
 }
 
+.input-control.lookup  div > span{
+	font-weight:300;
+	display:inline-block;
+	padding:10px 20px;
+	background:#e4e4e4;
+}
+
 .input-label {
 	font-weight:100;
 	font-size:18px;
