@@ -509,7 +509,7 @@ a.t-proj-workflow {
 }
 
 .t-proj-workflow  {
-	color:#666;
+    color:#666;
 }
 
 /* tables */
@@ -679,13 +679,6 @@ a.t-proj-workflow {
 	padding: 8px 15px;
 	z-index: 1;
 	-webkit-appearance: none;
-}
-
-.input-control.lookup  div > span{
-	font-weight:300;
-	display:inline-block;
-	padding:10px 20px;
-	background:#e4e4e4;
 }
 
 .input-label {
@@ -1126,7 +1119,7 @@ a.btn-opr-cancel {
 
 .wr-graph-img {
 	text-align:center;
-	margin-top:30px;
+	margin-top:20px;
 }
 
 .wr-graph-element h5 {
@@ -1136,29 +1129,30 @@ a.btn-opr-cancel {
 	padding-bottom:10px;
 	border-bottom:1px solid #e4e4e4;
 }
-
+/* scatter plot */
 .gr01 {
-	width:700px;
-	height:520px;
+	width:900px;
+	height:750px;
 }
-
+/* histograms */
 .gr02 {
-	width:700px;
-	height:250px;
+	width:440px;
+	height:365px;
 }
-
+/* model summary */
 .gr03 {
-	width:600px;
-	height:520px;
-}
-
-.gr04 {
-	width:800px;
-}
-
-.gr05 {
 	width:700px;
-	height:700px;
+	min-height:200px;
+}
+/* parallel sets */
+.gr04 {
+	width:900px;
+	height:750px;
+}
+/* trellis chart */
+.gr05 {
+	min-width:750px;
+	min-height:750px;
 }
 
 .wr-desc-chart {
@@ -1175,6 +1169,10 @@ a.btn-opr-cancel {
 	font-weight:100;
 }
 
+.reset-hover {
+	cursor:default;
+}
+
 .wr-instant-response {
 	border:1px solid #bce8f1;
 	background:#f6fdff;
@@ -1183,12 +1181,45 @@ a.btn-opr-cancel {
 
 .wr-instant-response label {
 	font-weight:100;
-	font-size:13px;
+	font-size:15px;
 }
 
 .wr-instant-response label > span {
 	font-weight:700;
-	font-size:13px;
+	font-size:15px;
+}
+
+.p-note {
+	font-size:12px;
+}
+
+.t-fake-input {
+	border:1px solid #999;
+	height:36px;
+}
+.btn-input-inline {
+	position:absolute;
+	right:0;
+}
+
+a.cu-input-inline-btn {
+  color: #333;
+  text-decoration: none;
+  border: 0px solid #ff0000;
+  padding: 7px 10px 10px 40px;
+  font-size: 14px;
+  margin: 0 0 0 0px;
+  font-weight: 200;
+  display: inline-block;
+  text-transform: uppercase;
+  background-size: 26px 26px;
+  background-position: 0.2em 0.3em;
+}
+
+#selected-table {
+	padding-top:7px;
+	padding-left:10px;
+	display:inline-block;
 }
 
 
