@@ -637,7 +637,8 @@ a.t-proj-workflow {
 
 .nav-wedge-step {
 	display:block;
-	font-size:14px;
+	font-size: 14px;
+	font-weight: 100;
 }
 
 .ctrl-wiz-nav {
@@ -687,11 +688,6 @@ a.t-proj-workflow {
 	color:#555;
 }
 
-.input-label {
-	font-weight:400;
-	font-size:14px;
-	color:#555;	
-}
 
 .help-tip {
 	font-size:14px;
@@ -1241,12 +1237,11 @@ a.cu-input-inline-btn {
 .breadcrumb li a {
 	color: white;
 	text-decoration: none;
-	padding: 10px 0 10px 55px;
 	background:  #6c5c76;
 	position: relative;
 	display: block;
 	float: left;
-	padding: 12px 40px;
+	padding: 10px 40px;
 }
 .breadcrumb li a:active {
 	color: white;
@@ -1262,12 +1257,12 @@ a.cu-input-inline-btn {
 	display: block;
 	width: 0;
 	height: 0;
-	border-top: 36px solid transparent;
-	border-bottom: 36px solid transparent;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
 	border-left: 20px solid #6c5c76;
 	position: absolute;
 	top: 50%;
-	margin-top: -36px;
+	margin-top: -35px;
 	left: 100%;
 	z-index: 2;
 }
@@ -1276,12 +1271,12 @@ a.cu-input-inline-btn {
 	display: block;
 	width: 0;
 	height: 0;
-	border-top: 36px solid transparent;           /* Go big on the size, and let overflow hide */
-	border-bottom: 36px solid transparent;
+	border-top: 35px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 35px solid transparent;
 	border-left: 20px solid #eee;
 	position: absolute;
 	top: 50%;
-	margin-top: -36px;
+	margin-top: -35px;
 	margin-left: 1px;
 	left: 100%;
 	z-index: 1;
@@ -1291,21 +1286,26 @@ a.cu-input-inline-btn {
 	content: none;
 }
 .breadcrumb li:last-child{left:10px}
-.breadcrumb li:nth-child(2) a:before {  border-left: 20px solid #fff;}
-.breadcrumb li:nth-child(3) a:before {  border-left: 20px solid #fff;}
-.breadcrumb li:nth-child(4) a:before {  border-left: 20px solid #fff;}
-.breadcrumb li:nth-child(5) a:before {  border-left: 20px solid #fff;}
-.breadcrumb li:last-child 	a:before {  border-left: 20px solid #fff;}
+.breadcrumb li:nth-child(2) a:before {  border-left: 21px solid #fff;}
+.breadcrumb li:nth-child(3) a:before {  border-left: 21px solid #fff;}
+.breadcrumb li:nth-child(4) a:before {  border-left: 21px solid #fff;}
+.breadcrumb li:nth-child(5) a:before {  border-left: 21px solid #fff;}
 
 .breadcrumb li:nth-child(2) a       { background:        #EEEEEE; color: #667;  }
+.breadcrumb li:nth-child(2) a:hover	{ color: #fff2f2 !important;  }
 .breadcrumb li:nth-child(2) a:after { border-left-color: #EEEEEE; }
 .breadcrumb li:nth-child(3) a       { background:        #EEEEEE; color: #667; }
 .breadcrumb li:nth-child(3) a:after { border-left-color: #EEEEEE; }
+.breadcrumb li:nth-child(3) a:hover	{ color: #fff2f2 !important;  }
 .breadcrumb li:nth-child(4) a       { background:        #EEEEEE; color: #667;}
 .breadcrumb li:nth-child(4) a:after { border-left-color: #EEEEEE; }
+.breadcrumb li:nth-child(4) a:hover	{ color: #fff2f2 !important;  }
 .breadcrumb li:nth-child(5) a       { background:        #EEEEEE; color: #667;}
 .breadcrumb li:nth-child(5) a:after { border-left-color: #EEEEEE; }
+.breadcrumb li:nth-child(5) a:hover	{ color: #fff2f2 !important;  }
 .breadcrumb li:last-child 	a 		{ background: #EEEEEE ;  color: #667;  }
-.breadcrumb li:last-child 	a:after 	{ border-left-color: #EEEEEE ; }
-.breadcrumb li a:hover { background: #aaa; padding: 12px 40px; }
+.breadcrumb li:last-child 	a:after { border-left-color: #EEEEEE ; }
+.breadcrumb li:last-child	a:hover	{ color: #fff2f2 !important;  }
+.breadcrumb li a:hover { background: #aaa; padding: 10px 40px; }
 .breadcrumb li a:hover:after { border-left-color: #aaa !important; }
+
