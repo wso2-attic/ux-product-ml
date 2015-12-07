@@ -1221,6 +1221,8 @@ a.cu-input-inline-btn {
 	font-size: 20px;
 	font-weight: 100;
 	background-color: #EEEEEE;
+	margin: 0;
+	padding: 0;
 	}
 .nav-wizard:after {
 	clear: both;
