@@ -1,9 +1,24 @@
-/* */
+/*
+ * Copyright (c) 2005-2014, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ * WSO2 Inc. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
 
 /* Regular */
 @font-face {
     font-family: 'Open Sans';
-    
     src: url('../fonts/OpenSans-Regular-webfont.eot');
     src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
@@ -245,7 +260,7 @@ a.ctrl-asset-type-switcher:hover {
 .wr-asset-type-switcher span.btn-asset {
 	width:54px;
 	height:54px;
-	margin-right:0px;	
+	margin-right:0;
 	display:inline-block;
 	background:#222 url('../images/icons/ico-menu.png') 1em 1em no-repeat;
 }
@@ -293,7 +308,7 @@ a.ast-type-item img {
 }
 
 .wr-secondary-links {
-	padding-top:0px;
+	padding-top:0;
 }
 
 .wr-auth {
@@ -726,7 +741,6 @@ h4.h-option-head span {
 	font-weight: 500;
 	display: inline-block;
 	padding-left:5px;
-	
 }
 
 
@@ -1194,10 +1208,10 @@ a.btn-opr-cancel {
 a.cu-input-inline-btn {
   color: #333;
   text-decoration: none;
-  border: 0px solid #ff0000;
+  border: 0 solid #ff0000;
   padding: 7px 10px 10px 40px;
   font-size: 14px;
-  margin: 0 0 0 0px;
+  margin: 0;
   font-weight: 200;
   display: inline-block;
   text-transform: uppercase;
@@ -1215,6 +1229,9 @@ a.cu-input-inline-btn {
 .nav-wizard-wrapper{
 	background-color: #eee;
 	margin:0 -15px;
+	text-align: center;
+	overflow: hidden;
+	height: 68px; /* TODO: Remove and fix the dynamic height */
 }
 .nav-wizard {
 	list-style: none;
@@ -1223,7 +1240,8 @@ a.cu-input-inline-btn {
 	background-color: #EEEEEE;
 	margin: 0;
 	padding: 0;
-	}
+	display: inline-block;
+}
 .nav-wizard:after {
 	clear: both;
 	display: block;
@@ -1232,6 +1250,7 @@ a.cu-input-inline-btn {
 }
 .nav-wizard li {
 	float: left;
+	text-align: left;
 }
 .nav-wizard li a {
 	text-decoration: none;
@@ -1245,16 +1264,10 @@ a.cu-input-inline-btn {
 .nav-wizard li a:hover {
 	color:#fff;
 	background: #aaa;
-	padding: 10px 40px;
 }
 .nav-wizard li.active a {
 	color: white;
-	text-decoration: none;
 	background:  #6c5c76;
-	position: relative;
-	display: block;
-	float: left;
-	padding: 10px 40px;
 }
 .nav-wizard li.active a:after {
 	content: " ";
@@ -1289,7 +1302,7 @@ a.cu-input-inline-btn {
 	display: block;
 	width: 0;
 	height: 0;
-	border-top: 35px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-top: 35px solid transparent;/* Go big on the size, and let overflow hide */
 	border-bottom: 35px solid transparent;
 	border-left: 20px solid #fff;
 	position: absolute;
@@ -1302,6 +1315,9 @@ a.cu-input-inline-btn {
 .nav-wizard > li + li:before {
 	padding:0;
 	content:" ";
+}
+.nav-wizard li.active a:hover:after {
+	border-left-color: #6c5c76;
 }
 .nav-wizard li a:hover:after {
 	border-left-color: #aaa;
